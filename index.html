@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F168 - Trang Web Giải Trí</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a; /* Dark background for the whole page */
+        }
+        .hero-bg {
+            /* CHÚ Ý: Mình đã cập nhật ảnh banner theo yêu cầu của bạn.
+              Nếu bạn muốn đổi ảnh khác trong tương lai, bạn cần tải ảnh đó lên một dịch vụ hosting 
+              (ví dụ: imgur.com, postimages.org) rồi dán link ảnh trực tiếp vào url() bên dưới.
+            */
+            background-image: url('https://i.postimg.cc/GmWc3Vt2/1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow-custom {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f59e0b;
+            transition: width 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #f59e0b;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="text-4xl font-black text-amber-500 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 001.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    </svg>
+                    F168
+                </a>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3">
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="px-5 py-2 text-sm font-bold bg-amber-500 hover:bg-amber-400 rounded-md transition duration-300 shadow-md">
+                        ĐĂNG KÝ
+                    </a>
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="px-5 py-2 text-sm font-bold bg-gray-700 hover:bg-gray-600 rounded-md transition duration-300">
+                        ĐĂNG NHẬP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg relative h-[600px]">
+             <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="absolute inset-0" aria-label="Đăng ký nhận 25 USDT"></a>
+            <!-- Nội dung chữ đã được gỡ bỏ vì ảnh banner mới của bạn đã tích hợp sẵn chữ. -->
+        </section>
+
+        <!-- Promotions Section -->
+        <section class="bg-gray-900 py-16 sm:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-wider text-shadow-custom">
+                        Khuyến Mãi Dành Riêng Cho Thành Viên
+                    </h2>
+                    <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- New Promotion 7 -->
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="block rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://i.postimg.cc/GmWc3Vt2/1.jpg" alt="Khuyến mãi mới" class="w-full h-full object-cover">
+                    </a>
+                    <!-- New Promotion 8 -->
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="block rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://i.postimg.cc/dV4x4yPK/banner-2-4-1.png" alt="Khuyến mãi mới" class="w-full h-full object-cover">
+                    </a>
+                    <!-- New Promotion 9 -->
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="block rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://i.postimg.cc/ZKz2RmFX/banner-3-3.png" alt="Khuyến mãi mới" class="w-full h-full object-cover">
+                    </a>
+                    <!-- New Promotion 10 -->
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="block rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://i.postimg.cc/SNL5YPgR/banner-4.png" alt="Khuyến mãi mới" class="w-full h-full object-cover">
+                    </a>
+                    <!-- New Promotion 11 -->
+                    <a href="https://f168n.com/home/register?id=680806563&currency=VND" class="block rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://i.postimg.cc/W12yG7yn/banner-5.png" alt="Khuyến mãi mới" class="w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="bg-gray-900 pb-16 sm:pb-24">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-800 p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 bg-amber-500 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Thương Hiệu Uy Tín</h3>
+                        <p class="text-gray-400">Thương hiệu uy tín được nhiều người lựa chọn, đảm bảo công bằng và minh bạch.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-800 p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 bg-amber-500 rounded-full mx-auto mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Đa Dạng Sản Phẩm</h3>
+                        <p class="text-gray-400">Casino trực tuyến, Thể Thao, Nổ Hũ, Bắn Cá, Đá Gà... Nhiều sản phẩm đa dạng cho bạn lựa chọn.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-800 p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 bg-amber-500 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.602-3.751m-.223-3.26a11.959 11.959 0 00-3.182-2.923M15.75 6a11.959 11.959 0 00-3.182-2.923" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">An Ninh Bảo Mật</h3>
+                        <p class="text-gray-400">Phương thức thanh toán đa dạng, đảm bảo an toàn và bảo mật cao, thông tin của bạn được mã hóa.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="bg-gray-800 p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 bg-amber-500 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5l6 6m0 0l-6 6m6-6H3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Giao Dịch Nhanh Chóng</h3>
+                        <p class="text-gray-400">Giao dịch gửi tiền được xử lý trong vòng 1-3 phút khi nhận được khoản chuyển tiền.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500">
+            <p>&copy; 2024 F168. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Đây là một giao diện mẫu. Vui lòng chơi có trách nhiệm.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
